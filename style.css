@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Nosifer&family=Titillium+Web:wght@600&display=swap');
+*{
+  margin:0;
+  padding:0;
+
+
+}
+#header {
+  width: 100%;
+  height: 70px;
+  background-color: #0d0a0a;
+
+
+
+}
+#title {
+color: #fff;
+font-family: 'Cabin Sketch', sans-serif;
+height: 40px;
+width: 100%;
+text-align: center;
+font-size: 45px;
+position: relative;
+top: 10px;
+letter-spacing: 5px;
+}
+#back {
+  background-image:url("images/back.jpg");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index:1;
+  background-repeat: repeat;
+}
+#first img, #second img, #third img {
+  border: 2px solid white;
+}
+#first img, #first  {
+  height: 500px;
+  width: 350px;
+  position: relative;
+  /*top: 20px;
+  left:62px;*/
+
+}
+#second img, #second {
+  height: 500px;
+  width: 350px;
+  position: relative;
+  /*left:242px;
+  bottom:230px;*/
+
+
+}
+#third img, #third {
+  height: 500px;
+  width: 350px;
+  position: relative;
+  /*left:422px;
+  bottom: 480px;*/
+}
+#third img:hover {
+  height: 600px;
+  width: 450px;
+  bottom:50px;
+}
+#second img:hover {
+  height: 600px;
+  width: 450px;
+  bottom:50px;
+  z-index: 100;
+  right: 50px;
+}
+#first img:hover {
+  height: 600px;
+  width: 450px;
+  z-index: 100;
+  bottom:50px;
+  right: 100px;
+}
+.gridclass {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 500px;
+  column-gap: 10px;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+
+}
+@media only screen and (max-width: 1124px){
+  .gridclass{
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    grid-row-gap: 20px;
+  }
+  #first img:hover {
+    right:50px;
+
+  }
+  #third img:hover {
+    right:50px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .gridclass {
+    grid-template-columns: repeat(3, auto);
+
+  }
+  #first img, #first, #second img, #second, #third img, #third {
+    height: 650px;
+    width: 500px;
+  }
+  #third img:hover{
+    height: 725px;
+    width: 575px;
+    top:-35px;
+  }
+  #second img:hover {
+    height: 725px;
+    width: 575px;
+    top:-35px;
+    z-index: 100;
+  }
+  #first img:hover {
+    height: 725px;
+    width: 575px;
+    top:-35px;
+    right:75px;
+
+  }
+}
